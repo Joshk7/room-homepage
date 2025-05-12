@@ -1,0 +1,32 @@
+@use "../abstracts/" as a;
+
+.nav {
+  --nav-color: var(--white);
+  --accent-color: transparent;
+  color: var(--nav-color);
+
+  &--accented {
+    --accent-color: var(--nav-color);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: a.rem(32);
+  }
+
+  &__link {
+    position: relative;
+    color: inherit;
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      left: 25%;
+      bottom: a.rem(-8);
+      width: 50%;
+      height: a.rem(2);
+      background-color: var(--accent-color);
+    }
+  }
+}

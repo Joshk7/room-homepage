@@ -1,0 +1,18 @@
+@use "../abstracts/" as a;
+
+.dialog {
+  max-width: 100%;
+  width: 100%;
+  border: none;
+
+  &__wrapper {
+    max-width: 100%;
+    padding: a.rem(48) a.rem(24);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    --nav-color: var(--black) !important;
+  }
+}

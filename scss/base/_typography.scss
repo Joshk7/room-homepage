@@ -1,0 +1,35 @@
+@use "../abstracts/" as a;
+
+h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  line-height: normal;
+  font-size: clamp(2.5rem, 2.324rem + 0.751vw, 3rem);
+  letter-spacing: clamp(-0.104rem, -0.097rem + -0.031vw, -0.125rem);
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: a.rem(22);
+  font-size: clamp(0.875rem, 0.831rem + 0.188vw, 1rem);
+  letter-spacing: clamp(0.364rem, 0.383rem + -0.078vw, 0.313rem);
+}
+
+p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  line-height: a.rem(22);
+  letter-spacing: a.rem(-0.33);
+  color: var(--accent);
+}
+
+a {
+  font-family: var(--font-family);
+  font-weight: 600;
+  line-height: normal;
+  font-size: a.rem(16);
+  letter-spacing: a.rem(-0.67);
+  text-decoration: none;
+  cursor: pointer;
+}

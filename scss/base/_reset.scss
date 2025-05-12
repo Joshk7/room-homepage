@@ -1,14 +1,14 @@
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 img,
@@ -16,18 +16,24 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 ul,
 li {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 :root {
-    --font-family-primary: "Josefin Sans";
-    --font-family-secondary: "Alata";
-    --white: #FFFFFF;
-    --black: #000000;
+  --font-family: "League Spartan";
+  --white: #ffffff;
+  --black: #000000;
+  --accent: #a0a0a0;
 }

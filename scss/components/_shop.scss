@@ -1,0 +1,26 @@
+@use "../abstracts/" as a;
+
+.shop {
+  display: flex;
+  column-gap: a.rem(30);
+
+  &__text {
+    text-transform: uppercase;
+    letter-spacing: a.rem(12.5);
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: a.rem(15);
+    line-height: a.rem(16);
+  }
+
+  &:hover &__arrow,
+  &:focus &__arrow {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(1%) saturate(0%)
+      hue-rotate(101deg) brightness(96%) contrast(92%);
+  }
+}
+
+.shop:hover,
+.shop:focus {
+  color: var(--accent);
+}

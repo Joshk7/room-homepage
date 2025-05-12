@@ -1,0 +1,16 @@
+@use "../abstracts/" as a;
+
+.main {
+    &__image {
+        width: 100%;
+    }
+
+    &__section {
+        padding: a.rem(48) a.rem(32);
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-block-end: a.rem(16);
+    }
+}
