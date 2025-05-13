@@ -1,0 +1,10 @@
+@use "../abstracts/" as a;
+
+.controls {
+    &__button {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
