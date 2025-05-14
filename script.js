@@ -38,6 +38,9 @@ const dialog = document.getElementById("dialog");
 const dialogOpen = document.getElementById("dialog-open");
 const dialogClose = document.getElementById("dialog-close");
 
+const controlLeft = document.getElementById("control-left");
+const controlRight = document.getElementById("control-right");
+
 const handleDialogOpen = (e) => {
   dialog.showModal();
 };
@@ -46,5 +49,16 @@ const handleDialogClose = (e) => {
   dialog.close();
 };
 
+const handleControlLeft = (e) => {
+
+}
+
+const handleControlRight = (e) => {
+
+}
+
 dialogOpen.addEventListener("click", handleDialogOpen);
 dialogClose.addEventListener("click", handleDialogClose);
+
+controlLeft.addEventListener("click", handleControlLeft);
+controlRight.addEventListener("click", handleControlRight);
