@@ -64,7 +64,6 @@ const setIndex = (i) => {
 
 const renderHeader = () => {
   const { mobileImage, desktopImage, title, description } = states[index];
-
   headerImageDesktop.srcset = desktopImage;
   headerImageMobile.src = mobileImage;
   

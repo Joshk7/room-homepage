@@ -83,13 +83,14 @@
   &__controls {
     background-color: var(--black);
     position: absolute;
+    z-index: 2;
     right: 0;
     top: a.rem(-56);
     height: a.rem(56);
     width: calc(160 / 600 * 100%);
     display: flex;
 
-    @include a.breakpoint("md") {
+    @include a.breakpoint("lg") {
         right: unset;
         top: unset;
         bottom: 0;
@@ -98,7 +99,7 @@
   }
 
 
-  @include a.breakpoint("md") {
+  @include a.breakpoint("lg") {
     display: grid;
     grid-template-columns: repeat(72, 1fr);
   }

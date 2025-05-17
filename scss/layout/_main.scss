@@ -31,7 +31,7 @@
         margin-block-end: a.rem(16);
     }
 
-    @include a.breakpoint("md") {
+    @include a.breakpoint("lg") {
         display: grid;
         grid-template-columns: repeat(72, 1fr);
     }
