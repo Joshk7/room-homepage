@@ -72,6 +72,18 @@ a {
   cursor: pointer;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade__in {
+  animation: fadeIn 0.5s ease-out;
+}
+
 .dialog {
   max-width: 100%;
   width: 100%;
@@ -284,7 +296,7 @@ a {
   align-items: center;
 }
 .controls__button:hover {
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 .hidden {

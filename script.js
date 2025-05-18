@@ -40,8 +40,9 @@ const dialog = document.getElementById("dialog");
 const dialogOpen = document.getElementById("dialog-open");
 const dialogClose = document.getElementById("dialog-close");
 
-const headerImageDesktop = document.getElementById("header-image-desktop");
-const headerImageMobile = document.getElementById("header-image-mobile");
+const headerImageSource = document.getElementById("header-image-source");
+const headerImage = document.getElementById("header-image");
+const headerContent = document.getElementById("header-content");
 const headerTitle = document.getElementById("header-title");
 const headerDescription = document.getElementById("header-description");
 
@@ -64,20 +65,30 @@ const setIndex = (i) => {
 
 const renderHeader = () => {
   const { mobileImage, desktopImage, title, description } = states[index];
-  headerImageDesktop.srcset = desktopImage;
-  headerImageMobile.src = mobileImage;
-  
-  headerImageMobile.src = headerImageMobile.src;
+  headerImageSource.srcset = desktopImage;
+  headerImage.src = mobileImage;
+
+  headerImage.src = headerImage.src;
 
   headerTitle.textContent = title;
   headerDescription.textContent = description;
 };
 
+const fadeIn = (node) => {
+  node.classList.remove("fade__in");
+  void node.offsetWidth;
+  node.classList.add("fade__in");
+};
+
 const handleControlLeft = (e) => {
+  fadeIn(headerImage);
+  fadeIn(headerContent);
   setIndex(index - 1);
 };
 
 const handleControlRight = (e) => {
+  fadeIn(headerImage);
+  fadeIn(headerContent);
   setIndex(index + 1);
 };
 

@@ -48,13 +48,13 @@
       <section class="header__carousel">
         <picture class="header__picture">
           <source
-            id="header-image-desktop"
+            id="header-image-source"
             srcset="/images/desktop-image-hero-1.jpg"
             media="(min-width: 40em)"
           />
           <img
-            id="header-image-mobile"
-            class="header__image"
+            id="header-image"
+            class="header__image fade__in"
             src="/images/mobile-image-hero-1.jpg"
             alt=""
           />
@@ -91,20 +91,22 @@
       </section>
       <section class="header__topic">
         <div class="header__wrapper">
-          <h1 id="header-title" class="header__title">
-            Discover innovative ways to decorate
-          </h1>
-          <p id="header-description" class="header__description">
-            We provide unmatched quality, comfort, and style for property owners
-            across the country. Our experts combine form and function in
-            bringing your vision to life. Create a room in your own style with
-            our collection and make your property a reflection of you and what
-            you love.
-          </p>
-          <button class="shop">
-            <span class="shop__text">Shop now</span>
-            <img class="shop__arrow" src="/images/icon-arrow.svg" alt="" />
-          </button>
+          <div id="header-content" class="header__content fade__in">
+            <h1 id="header-title" class="header__title">
+              Discover innovative ways to decorate
+            </h1>
+            <p id="header-description" class="header__description">
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <button class="shop">
+              <span class="shop__text">Shop now</span>
+              <img class="shop__arrow" src="/images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
           <div class="header__controls controls">
             <button id="control-left" class="controls__button">
               <img
