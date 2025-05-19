@@ -74,21 +74,27 @@ const renderHeader = () => {
   headerDescription.textContent = description;
 };
 
-const fadeIn = (node) => {
-  node.classList.remove("fade__in");
+const fadeImage = (node) => {
+  node.classList.remove("fade__image");
   void node.offsetWidth;
-  node.classList.add("fade__in");
+  node.classList.add("fade__image");
+};
+
+const fadeContent = (node) => {
+  node.classList.remove("fade__content");
+  void node.offsetWidth;
+  node.classList.add("fade__content");
 };
 
 const handleControlLeft = (e) => {
-  fadeIn(headerImage);
-  fadeIn(headerContent);
+  fadeImage(headerImage);
+  fadeContent(headerContent);
   setIndex(index - 1);
 };
 
 const handleControlRight = (e) => {
-  fadeIn(headerImage);
-  fadeIn(headerContent);
+  fadeImage(headerImage);
+  fadeContent(headerContent);
   setIndex(index + 1);
 };
 

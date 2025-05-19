@@ -46,7 +46,7 @@
     </dialog>
     <header class="header">
       <section class="header__carousel">
-        <picture class="header__picture">
+        <picture class="header__picture perspective">
           <source
             id="header-image-source"
             srcset="/images/desktop-image-hero-1.jpg"
@@ -54,7 +54,7 @@
           />
           <img
             id="header-image"
-            class="header__image fade__in"
+            class="header__image fade__image"
             src="/images/mobile-image-hero-1.jpg"
             alt=""
           />
@@ -90,8 +90,8 @@
         </div>
       </section>
       <section class="header__topic">
-        <div class="header__wrapper">
-          <div id="header-content" class="header__content fade__in">
+        <div class="header__wrapper perspective">
+          <div id="header-content" class="header__content fade__content">
             <h1 id="header-title" class="header__title">
               Discover innovative ways to decorate
             </h1>
@@ -107,22 +107,22 @@
               <img class="shop__arrow" src="/images/icon-arrow.svg" alt="" />
             </button>
           </div>
-          <div class="header__controls controls">
-            <button id="control-left" class="controls__button">
-              <img
-                class="controls__image"
-                src="/images/icon-angle-left.svg"
-                alt=""
-              />
-            </button>
-            <button id="control-right" class="controls__button">
-              <img
-                class="controls__image"
-                src="/images/icon-angle-right.svg"
-                alt=""
-              />
-            </button>
-          </div>
+        </div>
+        <div class="header__controls controls">
+          <button id="control-left" class="controls__button">
+            <img
+              class="controls__image"
+              src="/images/icon-angle-left.svg"
+              alt=""
+            />
+          </button>
+          <button id="control-right" class="controls__button">
+            <img
+              class="controls__image"
+              src="/images/icon-angle-right.svg"
+              alt=""
+            />
+          </button>
         </div>
       </section>
     </header>
