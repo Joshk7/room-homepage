@@ -91,19 +91,11 @@ a {
     opacity: 1;
   }
 }
-.perspective {
-  perspective: 100px;
-}
-
 .fade__image {
   animation: fadeImage 0.5s ease-out;
 }
 .fade__content {
   animation: fadeContent 0.5s ease-out;
-}
-
-.fade__in {
-  animation: fadeIn 0.5s ease-out;
 }
 
 .dialog {

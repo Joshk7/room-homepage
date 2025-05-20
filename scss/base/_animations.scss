@@ -20,10 +20,6 @@
   }
 }
 
-.perspective {
-    perspective: 100px;
-}
-
 .fade {
     &__image {
         animation: fadeImage 0.5s ease-out;
@@ -32,8 +28,4 @@
     &__content {
         animation: fadeContent 0.5s ease-out;
     }
-}
-
-.fade__in {
-    animation: fadeIn 0.5s ease-out;
 }
