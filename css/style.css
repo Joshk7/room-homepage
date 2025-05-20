@@ -36,6 +36,7 @@ button {
   --white: #ffffff;
   --black: #000000;
   --accent: #a0a0a0;
+  --control: #444444;
 }
 
 h1 {
@@ -317,7 +318,7 @@ a {
   align-items: center;
 }
 .controls__button:hover {
-  opacity: 0.5;
+  background-color: var(--control);
 }
 
 .hidden {

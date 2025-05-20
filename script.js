@@ -1,7 +1,7 @@
 const states = [
   {
-    mobileImage: "/images/mobile-image-hero-1.jpg",
-    desktopImage: "/images/desktop-image-hero-1.jpg",
+    mobileImage: "images/mobile-image-hero-1.jpg",
+    desktopImage: "images/desktop-image-hero-1.jpg",
     title: "Discover innovative ways to decorate",
     description: `We provide unmatched quality, comfort, 
             and style for property owners across the country. 
@@ -11,8 +11,8 @@ const states = [
             a reflection of you and what you love.`,
   },
   {
-    mobileImage: "/images/mobile-image-hero-2.jpg",
-    desktopImage: "/images/desktop-image-hero-2.jpg",
+    mobileImage: "images/mobile-image-hero-2.jpg",
+    desktopImage: "images/desktop-image-hero-2.jpg",
     title: "We are available all across the globe",
     description: `With stores all over the world, it's easy
             for you to find furniture for your home or place of 
@@ -22,8 +22,8 @@ const states = [
             hesitate to contact us today.`,
   },
   {
-    mobileImage: "/images/mobile-image-hero-3.jpg",
-    desktopImage: "/images/desktop-image-hero-3.jpg",
+    mobileImage: "images/mobile-image-hero-3.jpg",
+    desktopImage: "images/desktop-image-hero-3.jpg",
     title: "Manufactured with the best materials",
     description: `Our modern furniture store provide a high level
             of quality. Our company has invested in advanced 
